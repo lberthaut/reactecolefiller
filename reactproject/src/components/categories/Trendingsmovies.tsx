@@ -1,16 +1,18 @@
 import { useState } from "react"
-import Fetch from "../../services/Fetch"
+import Fetchmovie from "../../services/Fetchmovie"
 import List from "../List";
+import { Imovie } from "../Home";
 
-export default function Trendingmovies(){
-    const [datas, setDatas] = useState([])
-    const trendingTitle = "Films en tendance"
+
+export default function Trendingmovies() {
+    const [datas, setDatas] = useState<Imovie[]>([])
+    const trendingTitle = "Films tendance de la semaine"
     const trendingURL = '/trending/movie/week'
 
 
-    return(
-    <>
-        <Fetch setDatas={setDatas} URI = {trendingURL}/>
-        <List datas={datas} titlecontainer={trendingTitle}/>
-    </>)
+    return (
+        <>
+            <Fetchmovie setDatas={setDatas} URI={trendingURL} />
+            <List datas={datas} titlecontainer={trendingTitle} />
+        </>)
 }

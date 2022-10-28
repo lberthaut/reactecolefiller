@@ -1,12 +1,15 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from '../Header'
+import Home from '../Home'
+import Moviedetails from '../Moviedetails'
 
 export default function Router() {
-    return(
+    return (
         <BrowserRouter>
-        <Header/>
+            <Header />
             <Routes>
-{/*                 <Route path="/" element={<Home/>}/> */}
+                <Route path="/" element={<Home />} />
+                <Route path="/movie/:id" element={<Moviedetails />} />
             </Routes>
         </BrowserRouter>
     )

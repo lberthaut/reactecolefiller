@@ -1,10 +1,23 @@
+import Topratedmovies from "./categories/Topratedmovies";
 import Trendingmovies from "./categories/Trendingsmovies";
+import '../styles/list.css'
 
+export interface Imovie {
 
-export default function Home(){
+    title: string;
+    overview: string;
+    vote_average: number;
+    poster_path: string;
+    release_date: string;
+    id: number;
 
-    return(
-    <>
-        <Trendingmovies/>
-    </>)
+}
+
+export default function Home() {
+
+    return (
+        <>
+            <Trendingmovies />
+            <Topratedmovies />
+        </>)
 }
