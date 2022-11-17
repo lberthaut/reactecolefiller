@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { API_KEY } from '../app/App'
 import { Imovie } from '../components/Home'
 import { Idatas } from '../components/Home'
@@ -8,13 +9,15 @@ interface Isetdataprops {
 }
 
 export default function Fetchmovie(props: Isetdataprops) {
+    useEffect(() => {
+        fetch(`https://api.themoviedb.org/3${props.URI}?api_key=${API_KEY}&language=fr-fr&include_image_language=fr`)
+            .then(resp => resp.json())
+            .then(data => {
+                props.setDatas(data)
+                console.log(data)
+            });
+    }, [])
 
-    fetch(`https://api.themoviedb.org/3${props.URI}?api_key=${API_KEY}&language=fr-fr&include_image_language=fr`)
-        .then(resp => resp.json())
-        .then(data => {
-            props.setDatas(data)
-            console.log(data)
-        });
     return (
         <></>
     )
