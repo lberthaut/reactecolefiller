@@ -13,6 +13,10 @@ export interface Imovie {
 
 }
 
+export interface Idatas {
+    datas: Imovie[];
+}
+
 export default function Home() {
 
     return (
