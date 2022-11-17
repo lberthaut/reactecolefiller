@@ -14,7 +14,8 @@ export interface Imovie {
 }
 
 export interface Idatas {
-    datas: Imovie[];
+    datas: [];
+    results: Imovie[];
 }
 
 export default function Home() {

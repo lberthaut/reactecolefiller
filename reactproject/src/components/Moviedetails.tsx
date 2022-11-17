@@ -12,13 +12,9 @@ export default function Moviedetails() {
 
     return (
         <>
-            {console.log('datas', datas)}
-            {console.log('url', movieURL)}
-            {console.log('id', params.id)}
             <Fetchmovie setDatas={setMoviedatas} URI={movieURL} />
             <div className="movie_details_block">
                 <img alt="poster du film" className="movie_poster" src={`https://image.tmdb.org/t/p/w500${datas?.poster_path}`} />
-
             </div>
         </>
     )
