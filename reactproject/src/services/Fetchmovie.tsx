@@ -1,5 +1,6 @@
 import { API_KEY } from '../app/App'
 import { Imovie } from '../components/Home'
+import { Idatas } from '../components/Home'
 
 interface Isetdataprops {
     setDatas: ((data: []) => void) | ((data: Imovie | null) => void);

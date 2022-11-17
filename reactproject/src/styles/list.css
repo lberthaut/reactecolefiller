@@ -10,14 +10,9 @@
 }
 
 .title_list {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 3vw;
   margin: 0;
   padding-left: 2%;
-}
-
-.movie_container {
-
 }
 
 .movie_container_link{
@@ -40,6 +35,8 @@
   box-shadow: 0 5px 25px rgba(0,0,0,0.3);
   transform: scale(1.02);
   opacity: 1;
+  text-decoration: none;
+  color: white;
 }
 
 .movie_title {
