@@ -1,0 +1,8 @@
+.movie_details_block {
+  border-radius: 5px;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15);
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}

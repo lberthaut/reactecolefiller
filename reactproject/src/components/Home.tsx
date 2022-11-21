@@ -10,7 +10,8 @@ export interface Imovie {
     poster_path: string;
     release_date: string;
     id: number;
-
+    tagline: string;
+    budget: number;
 }
 
 export interface Idatas {

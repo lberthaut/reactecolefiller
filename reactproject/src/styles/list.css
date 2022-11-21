@@ -1,4 +1,4 @@
-.movies_container{
+.movies_container {
   margin: 1% 2% 4% 2%;
 }
 
@@ -15,9 +15,9 @@
   padding-left: 2%;
 }
 
-.movie_container_link{
+.movie_container_link {
   border-radius: 5px;
-  box-shadow: 0 1px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
   opacity: 0.7;
   margin-bottom: 1.5%;
@@ -32,7 +32,7 @@
 }
 
 .movie_container_link:hover {
-  box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
   transform: scale(1.02);
   opacity: 1;
   text-decoration: none;
@@ -41,20 +41,20 @@
 
 .movie_title {
   margin: 0;
-  font-size: 0.8em;
+  font-size: 1vw;
   width: 60%;
-
 }
 
-.movie_poster_container{
+.movie_poster_container {
   width: 80%;
   border-radius: 5px;
-  overflow:hidden;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   margin-top: 2%;
 }
 
-.movie_poster{
+.movie_poster {
   height: 100%;
   width: 100%;
 }

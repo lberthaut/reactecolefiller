@@ -14,7 +14,6 @@ export default function Fetchmovie(props: Isetdataprops) {
             .then(resp => resp.json())
             .then(data => {
                 props.setDatas(data)
-                console.log(data)
             });
     }, [])
 
