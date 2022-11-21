@@ -33,3 +33,7 @@
 .link:hover {
   color: black;
 }
+
+.login_link{
+  width: 10%;
+}

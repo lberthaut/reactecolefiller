@@ -1,0 +1,13 @@
+.login_container{
+    border-radius: 5px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15);
+    height: 50vh;
+    width: 30%;
+    padding: 2% 5% 2% 5%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 5%;
+}
