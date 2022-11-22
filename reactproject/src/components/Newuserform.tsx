@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-interface Inewuser {
+export interface Inewuser {
   email: string;
   password: string;
   firstname: string;

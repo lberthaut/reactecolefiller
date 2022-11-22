@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { MyContext } from "../app/store/Appcontext";
+import { Icontext } from "../app/store/Appcontext";
 
 interface Ilogin {
   email: string;
@@ -8,11 +11,12 @@ interface Ilogin {
 }
 
 export default function Loginform() {
+  const navigate = useNavigate();
+  const { store } = useContext(MyContext) as Icontext;
   const [userDatas, setUserDatas] = useState<Ilogin>({
     email: "",
     password: "",
   });
-  const navigate = useNavigate();
 
   function Postaxios() {
     axios
@@ -20,6 +24,8 @@ export default function Loginform() {
       .then((resp) => {
         sessionStorage.setItem("token", resp?.data.token);
         navigate("/mypage");
+        // store!.isuserauth = true;
+        // console.log(store);
       })
       .catch((error) => console.log("error !", error.response.data));
   }

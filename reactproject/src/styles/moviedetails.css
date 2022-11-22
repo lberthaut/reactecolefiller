@@ -10,36 +10,38 @@
   flex-direction: row;
 }
 
-.moviedetails_poster_container{
+.moviedetails_poster_container {
   margin: 2% 2% 2% 2%;
   border-radius: 5px;
   overflow: hidden;
 }
 
-.moviedetails_text_container{
+.moviedetails_text_container {
   margin: 2% 2% 2% 2%;
-  width: 60%;
+  width: 55%;
   height: 100%;
 }
 
-.moviedetails_title, .moviedetails_tagline {
+.moviedetails_title,
+.moviedetails_tagline {
   text-align: center;
 }
 
 .moviedetails_tagline {
-font-size: 1.5vw
+  font-size: 1.5vw;
 }
 
-.moviedetails_overview_title{
+.moviedetails_overview_title {
   margin-top: 15%;
   font-size: 1.2vw;
 }
 
-.moviedetails_overview{
+.moviedetails_overview {
   text-align: justify;
 }
 
-.moviedetails_date_title, .moviedetails_budget_title{
+.moviedetails_date_title,
+.moviedetails_budget_title {
   font-size: 1.2vw;
   margin-top: 8%;
 }

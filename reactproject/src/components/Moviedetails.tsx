@@ -3,22 +3,34 @@ import { useParams } from "react-router-dom";
 import Fetchmovie from "../services/Fetchmovie";
 import { Imovie } from "./Home";
 import "../styles/moviedetails.css";
+import Videos from "./Videoscontainer";
+import Starrating from "./Starrating";
+
+export interface Ivideos {
+  id: number;
+  results: Ivideo[];
+}
+
+interface Ivideo {
+  key: string;
+}
 
 export default function Moviedetails() {
   const [datas, setMoviedatas] = useState<Imovie | null>(null);
+  const [datasVideos, setDatasVideos] = useState<Ivideos | null>(null);
   const params = useParams();
   const movieURL = `/movie/${params.id}`;
-  console.log(datas);
+  const movievideoURL = `/movie/${params.id}/videos`;
 
   let formatbudget = new Intl.NumberFormat("us-US", {
     style: "currency",
     currency: "DOL",
   }).format(datas?.budget!);
-  console.log(formatbudget);
 
   return (
     <>
       <Fetchmovie setDatas={setMoviedatas} URI={movieURL} />
+      <Fetchmovie setDatas={setDatasVideos} URI={movievideoURL} />
       <div className="movie_details_block">
         <div className="moviedetails_poster_container">
           <img
@@ -42,6 +54,8 @@ export default function Moviedetails() {
           )}
         </div>
       </div>
+      <Videos datas={datasVideos} />
+      {/* <Starrating datas={datas} /> */}
     </>
   );
 }

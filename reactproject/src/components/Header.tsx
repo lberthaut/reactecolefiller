@@ -16,14 +16,8 @@ export default function Header() {
             />
           </NavLink>
           <div className="pages_links">
-            <NavLink className="nav-link link" to="/découvertes">
+            <NavLink className="nav-link link" to="/discoveries">
               Découvertes
-            </NavLink>
-            <NavLink className="nav-link link" to="/horreur">
-              Horreur
-            </NavLink>
-            <NavLink className="nav-link link" to="/scifi">
-              Science-Fiction
             </NavLink>
           </div>
           <div className="pages_links login_link">
