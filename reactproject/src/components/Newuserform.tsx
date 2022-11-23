@@ -114,7 +114,7 @@ export default function Newuserform() {
         />
         <label htmlFor="birthday">Date d'anniversaire</label>
         <input
-          type="number"
+          type="date"
           id="birthday"
           value={userDatas?.birthday}
           onChange={(e) =>

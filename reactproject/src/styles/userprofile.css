@@ -39,6 +39,8 @@ margin-top: 2%;
 
 form>input{
   margin-bottom: 6%;
+  border-radius: 6px;
+  padding: 1%;
 }
 
 .addmovie_button, .updateprofile_button {

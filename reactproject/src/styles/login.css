@@ -15,16 +15,6 @@
     flex-direction: column;
 }
 
-/* .login_button{
-    width: 60%;
-    margin: 0 auto;
-    padding: 2%;
-    border-radius: 20px;
-    background-color: rgb(167, 0, 0);
-    border: none;
-    color: white;
-} */
-
 .login_background{
     position: absolute;
     z-index: -10;
