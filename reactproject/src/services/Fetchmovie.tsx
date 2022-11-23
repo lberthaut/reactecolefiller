@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { API_KEY } from "../app/App";
+import { Igenres } from "../components/Dropdown";
 import { Imovie } from "../components/Home";
 import { Idatas } from "../components/Home";
 import { Ivideos } from "../components/Moviedetails";
@@ -9,7 +10,8 @@ interface Isetdataprops {
     | ((data: []) => void)
     | ((data: Idatas | null) => void)
     | ((data: Imovie | null) => void)
-    | ((data: Ivideos | null) => void);
+    | ((data: Ivideos | null) => void)
+    | ((data: Igenres | null) => void);
   URI: string;
 }
 

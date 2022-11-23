@@ -18,8 +18,10 @@
 
 .moviedetails_text_container {
   margin: 2% 2% 2% 2%;
-  width: 55%;
-  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .moviedetails_title,
@@ -32,7 +34,6 @@
 }
 
 .moviedetails_overview_title {
-  margin-top: 15%;
   font-size: 1.2vw;
 }
 
@@ -43,5 +44,8 @@
 .moviedetails_date_title,
 .moviedetails_budget_title {
   font-size: 1.2vw;
-  margin-top: 8%;
+}
+
+.moviedetails_budget, .moviedetails_releasedate, .moviedetails_overview{
+  margin: 0;
 }

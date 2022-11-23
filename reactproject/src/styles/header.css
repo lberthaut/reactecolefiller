@@ -37,3 +37,11 @@
 .login_link{
   width: 10%;
 }
+
+.header_block{
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2%;
+}

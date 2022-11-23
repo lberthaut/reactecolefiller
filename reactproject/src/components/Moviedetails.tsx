@@ -40,17 +40,23 @@ export default function Moviedetails() {
           />
         </div>
         <div className="moviedetails_text_container">
-          <h1 className="moviedetails_title">{datas?.title}</h1>
-          <p className="moviedetails_tagline">{datas?.tagline}</p>
-          <p className="moviedetails_overview_title">Résumé:</p>
-          <p className="moviedetails_overview">{datas?.overview}</p>
-          <p className="moviedetails_date_title">Date de sortie</p>
-          <p className="moviedetails_releasedate">{datas?.release_date}</p>
+          <div>
+            <h1 className="moviedetails_title">{datas?.title}</h1>
+            <p className="moviedetails_tagline">{datas?.tagline}</p>
+          </div>
+          <div>
+            <p className="moviedetails_overview_title">Résumé:</p>
+            <p className="moviedetails_overview">{datas?.overview}</p>
+          </div>
+          <div>
+            <p className="moviedetails_date_title">Date de sortie:</p>
+            <p className="moviedetails_releasedate">{datas?.release_date}</p>
+          </div>
           {formatbudget === "0,00 DOL" ? null : (
-            <>
+            <div>
               <p className="moviedetails_budget_title">Budget:</p>
               <p className="moviedetails_budget">{formatbudget}</p>
-            </>
+            </div>
           )}
         </div>
       </div>

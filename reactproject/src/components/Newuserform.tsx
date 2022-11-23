@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "../styles/newuser.css";
 
 export interface Inewuser {
   email: string;
@@ -44,6 +45,11 @@ export default function Newuserform() {
 
   return (
     <>
+      <img
+        alt="wallpaper"
+        src="https://wallpapercave.com/wp/wp4016050.jpg"
+        className="login_background"
+      />
       <form className="formnewuser" onSubmit={handleSubmit}>
         <label htmlFor="firstname">Prénom</label>
         <input
@@ -115,7 +121,9 @@ export default function Newuserform() {
             setUserDatas({ ...userDatas, birthday: e.target.value })
           }
         />
-        <button type="submit">Valider !</button>
+        <button type="submit" className="register_button">
+          Valider !
+        </button>
       </form>
     </>
   );

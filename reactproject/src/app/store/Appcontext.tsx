@@ -15,7 +15,7 @@ export const MyContext = createContext<Icontext | null>(null);
 export default function Appcontext({ children }: any) {
   const [store, setStore] = useState<Istore>({
     isuserauth: false,
-    theme: "light",
+    theme: "dark",
   });
   return (
     <MyContext.Provider value={{ store, setStore }}>

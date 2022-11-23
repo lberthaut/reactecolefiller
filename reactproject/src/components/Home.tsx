@@ -1,6 +1,7 @@
 import Topratedmovies from "./categories/Topratedmovies";
 import Trendingmovies from "./categories/Trendingsmovies";
 import "../styles/list.css";
+import Head from "./Head";
 
 export interface Imovie {
   title: string;
@@ -21,6 +22,7 @@ export interface Idatas {
 export default function Home() {
   return (
     <>
+      <Head />
       <Trendingmovies />
       <Topratedmovies />
     </>
